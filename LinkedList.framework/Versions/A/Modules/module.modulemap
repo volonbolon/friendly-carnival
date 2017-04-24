@@ -1,0 +1,10 @@
+framework module LinkedList {
+  umbrella header "LinkedList.h"
+
+  export *
+  module * { export * }
+}
+
+module LinkedList.Swift {
+    header "LinkedList-Swift.h"
+}
