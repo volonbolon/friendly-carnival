@@ -32,7 +32,7 @@ extension Datasource {
         let ll = limits.lowerLeft
         let ur = limits.upperRight
         var points:[CGPoint] = []
-        for _ in 0..<20 {
+        for _ in 0..<limits.qty {
             let x = CGFloat(arc4random_uniform(ur.x - ll.x) + ll.x)
             let y = CGFloat(arc4random_uniform(ur.y - ll.y) + ll.y)
             let p = CGPoint(x: x, y: y)

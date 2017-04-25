@@ -17,6 +17,7 @@ struct IntPoint {
 struct Limits {
     let lowerLeft:IntPoint
     let upperRight:IntPoint
+    let qty:Int
 }
 
 struct ReversePolarSorter {
@@ -25,22 +26,28 @@ struct ReversePolarSorter {
 
 class ConvexHullView: NSView {
     var datasource:Datasource!
-    
-    override init(frame:NSRect) {
-        super.init(frame: frame)
-        self.loadDatasource()
+    var numberOfDots:Int! {
+        didSet {
+            self.loadDatasource()
+            self.setNeedsDisplay(self.bounds)
+        }
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        self.loadDatasource()
-    }
+//    override init(frame:NSRect) {
+//        super.init(frame: frame)
+//        self.loadDatasource()
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
+//        self.loadDatasource()
+//    }
     
     func loadDatasource() {
         let ll = IntPoint(x: 10, y: 10)
         let boundsSize = self.bounds.size
         let ur = IntPoint(x: UInt32(boundsSize.width)-20, y: UInt32(boundsSize.height)-20)
-        let limits = Limits(lowerLeft: ll, upperRight: ur)
+        let limits = Limits(lowerLeft: ll, upperRight: ur, qty:self.numberOfDots)
         let e:Either<Limits,[CGPoint]> = .Left(limits)
         self.datasource = Datasource(limitsOrPoints:e)
     }
