@@ -7,4 +7,5 @@ framework module LinkedList {
 
 module LinkedList.Swift {
     header "LinkedList-Swift.h"
+    requires objc
 }

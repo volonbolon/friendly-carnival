@@ -12,19 +12,17 @@ class ViewController: NSViewController {
     @IBOutlet weak var convexHullView: ConvexHullView!
     @IBOutlet weak var stepper: NSStepper!
     @IBOutlet weak var numberOfDotsLabel: NSTextField!
-    
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.setupNumberOfDots()
     }
 
     @IBAction func regenerate(_ sender: Any) {
         self.convexHullView.refresh()
     }
-    
+
     @IBAction func numberOfDotsChanged(_ sender: NSStepper) {
         self.setupNumberOfDots()
     }
@@ -38,4 +36,3 @@ extension ViewController {
         self.numberOfDotsLabel.stringValue = "\(numberOfDots)"
     }
 }
-
