@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B01204211E6AE71A0016EBF5 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01204201E6AE71A0016EBF5 /* Either.swift */; };
 		B01204221E6AED210016EBF5 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01204201E6AE71A0016EBF5 /* Either.swift */; };
+		B040E7A3204997DC0083C6AE /* CustomWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B040E7A2204997DC0083C6AE /* CustomWindow.swift */; };
 		B0A77FF71EAEA026001EC058 /* LinkedList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A77FF61EAEA026001EC058 /* LinkedList.framework */; };
 		B0A77FF81EAEA026001EC058 /* LinkedList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0A77FF61EAEA026001EC058 /* LinkedList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0BD0F9F1E6A0A3B00589072 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD0F9E1E6A0A3B00589072 /* Datasource.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		B01204201E6AE71A0016EBF5 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		B040E7A2204997DC0083C6AE /* CustomWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindow.swift; sourceTree = "<group>"; };
 		B0A77FF61EAEA026001EC058 /* LinkedList.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedList.framework; sourceTree = "<group>"; };
 		B0BD0F9E1E6A0A3B00589072 /* Datasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
 		B0E653821E478C3100443F7D /* ConvexHull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvexHull.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				B0E653B01E478D1A00443F7D /* ConvexHullView.swift */,
 				B0BD0F9E1E6A0A3B00589072 /* Datasource.swift */,
 				B01204201E6AE71A0016EBF5 /* Either.swift */,
+				B040E7A2204997DC0083C6AE /* CustomWindow.swift */,
 			);
 			path = ConvexHull;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				B0E653881E478C3100443F7D /* ViewController.swift in Sources */,
 				B0E653861E478C3100443F7D /* AppDelegate.swift in Sources */,
+				B040E7A3204997DC0083C6AE /* CustomWindow.swift in Sources */,
 				B0BD0F9F1E6A0A3B00589072 /* Datasource.swift in Sources */,
 				B0E653B11E478D1A00443F7D /* ConvexHullView.swift in Sources */,
 				B01204211E6AE71A0016EBF5 /* Either.swift in Sources */,
